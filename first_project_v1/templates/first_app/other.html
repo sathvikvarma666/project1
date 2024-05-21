@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "first_app/index.html" %}
+{% block body_block %}
+{% load my_extras %}
+    <h1>Hey This is My Other PAGE </h1>
+    {{ other_me|upper  }}
+    <br>
+    {{ other_2|cut:"rcb" }}
+{% endblock %}
